@@ -1,0 +1,22 @@
+# Dependencies (should never be committed)
+node_modules/
+prototype/node_modules/
+package-lock.json
+prototype/package.json
+prototype/package-lock.json
+prototype/shot.js
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Build / temp
+dist/
+.cache/
+*.tmp
+*-preview.png
+prototype/assets/img/logo-mark-512.png
+*.zip
