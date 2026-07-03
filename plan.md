@@ -138,11 +138,42 @@ fix(E4): correct enquiry form nonce check
 
 ### Phase 6 — LMS & Growth  (Epic E6, future)
 **Goal:** monetize Levels 2/3 and scale content.
-- LMS (Tutor LMS/LearnDash): paid courses, lessons, quizzes, certificates.
-- Payments (Razorpay/Stripe), memberships, student dashboard.
-- Blog/resources engine; editorial calendar; email nurture; A/B test CTAs.
-- International cohort landing pages (UAE/UK/AU/USA/SG).
-- **Exit:** first paid enrollment processed online; growth loop running.
+
+**LMS platform choice.** Recommend **Tutor LMS** (free core, generous features, Indian-market
+friendly) or **LearnDash** (premium, most mature). Both integrate with WordPress and WooCommerce.
+Decision driver: Tutor LMS to start lean; migrate to LearnDash only if advanced quizzing/reporting
+is needed.
+
+**How it fits our existing content model.**
+- Level 1 stays free and public, rendered by our `course`/`project` model (no LMS needed).
+- Levels 2 & 3 become **LMS courses** (lessons, topics, quizzes, assignments) gated behind purchase.
+- The public course page links "Enquire/Enroll" → the paid LMS course checkout.
+
+**Commerce & access.**
+- **WooCommerce** for the store + **Razorpay** (primary, INR/India) and **Stripe/PayPal**
+  (international) payment gateways.
+- **Memberships/subscriptions** (Tutor LMS Pro / Paid Memberships Pro) for cohort or all-access plans.
+- **Student dashboard**: progress, certificates, invoices (LMS provides this).
+- **Certificates** on completion; **drip content** to release weekly.
+
+**Data & privacy.** Paid materials and student PII live only inside the LMS (never in the public
+repo/site). Keep the "open datasets only" rule for anything public.
+
+**Growth loop.**
+- Blog/resources engine (WordPress posts) + editorial calendar; weekly project → YouTube + IG + WhatsApp.
+- Email nurture (e.g. FluentCRM) from Level-1 signups → Level-2 offers.
+- International cohort landing pages (UAE/UK/AU/USA/SG) with geo-relevant CTAs.
+- A/B test hero + CTA copy.
+
+**Build steps (when Levels 2/3 content is ready).**
+1. Install WooCommerce + Tutor LMS; connect Razorpay (+ Stripe/PayPal).
+2. Recreate Levels 2/3 as LMS courses with lessons/quizzes; set prices; enable certificates.
+3. Add student dashboard + login/registration; wire enroll CTAs from our course pages.
+4. Add FluentCRM for email nurture; tag Level-1 leads.
+5. Test a full purchase → access → completion → certificate flow in staging.
+
+- **Branches:** `feat/E6-lms`, `feat/E6-payments`, `content/E6-level2-*`
+- **Exit:** first paid enrollment processed online; student completes a course; growth loop running.
 
 ---
 
