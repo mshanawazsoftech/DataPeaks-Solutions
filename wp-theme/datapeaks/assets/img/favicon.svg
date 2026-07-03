@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="f-grad" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B82F6"/>
+      <stop offset="0.55" stop-color="#5AD7FF"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <radialGradient id="f-gold" cx="0.5" cy="0.5" r="0.5">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#F5B301"/>
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0A1426"/>
+  <!-- bold filled peaks for small-size legibility -->
+  <path d="M9 50 L23 26 L31 35 L42 14 L55 50 Z" fill="url(#f-grad)"/>
+  <path d="M9 51.5 H55" stroke="#5AD7FF" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  <circle cx="42" cy="14" r="4.5" fill="url(#f-gold)"/>
+</svg>

@@ -1,0 +1,18 @@
+/*
+Theme Name: DataPeaks Solutions
+Theme URI: https://datapeakssolutions.com
+Author: DataPeaks Solutions
+Author URI: https://datapeakssolutions.com
+Description: Custom theme for DataPeaks Solutions — a data & AI training institute in Hyderabad with a pharma & life sciences focus. Dark, accessible (WCAG 2.1 AA), project-first. Derived from the approved static prototype.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: datapeaks
+Tags: education, dark, custom-colors, custom-menu, responsive, accessibility-ready
+*/
+
+/* The full design system lives in assets/css/styles.css and is enqueued in functions.php.
+   This file only carries the WordPress theme header. */
