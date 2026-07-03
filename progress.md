@@ -9,12 +9,31 @@ Legend: ✅ done · 🚧 in progress · ⬜ todo · ⛔ blocked
 
 | Phase | Epic | Status |
 |---|---|---|
-| 1 — Foundation & Docs | E1 | 🚧 in progress |
-| 2 — Prototype UI | E2 | 🚧 in progress (initial build) |
-| 3 — Content & Course Model | E3 | ⬜ not started |
-| 4 — WordPress Build | E4 | ⬜ not started |
-| 5 — Launch & Ops | E5 | ⬜ not started |
-| 6 — LMS & Growth | E6 | ⬜ future |
+| 1 — Foundation & Docs | E1 | ✅ merged (PR #1) |
+| 2 — Prototype UI | E2 | ✅ merged (PR #2, #3) |
+| 3 — Content & Course Model | E3 | ✅ merged (PR #4) |
+| 4 — WordPress Build | E4 | ✅ theme merged (PR #5); core plugin + launch docs pending PR |
+| 5 — Launch & Ops | E5 | 🚧 launch guide ready (LAUNCH.md); deploy pending |
+| 6 — LMS & Growth | E6 | ⬜ planned (see plan.md Phase 6) |
+
+---
+
+## 2026-07-03 — WordPress theme, Core plugin, launch guide
+
+### ✅ Done
+- **WordPress theme** `wp-theme/datapeaks` built from the prototype and **merged (PR #5)** — CPTs,
+  templates, accessible level tabs, enquiry form, SEO, seeder. All PHP lint-clean.
+- **DataPeaks Core** plugin (`wp-plugin/datapeaks-core`): Course + Project CPTs, meta boxes, default
+  data and seeder moved into a plugin so content is theme-independent. Theme defers to it when active,
+  works standalone otherwise (24 PHP files, all lint-clean).
+- **LAUNCH.md**: complete GoDaddy go-live guide + required SMTP + SSL + caching + security + backups
+  + SEO/analytics + a pre-launch QA checklist.
+- **Phase 6 (LMS)** expanded in plan.md: Tutor LMS/LearnDash + WooCommerce + Razorpay/Stripe, memberships,
+  student dashboard, certificates, email nurture, build steps.
+- Packaged installable `datapeaks-theme` and `datapeaks-core` zips.
+
+### ⬜ Next
+- Open PR `feat/E4-core-plugin` (plugin + LAUNCH.md + plan.md + theme plugin-hook), then deploy per LAUNCH.md.
 
 ---
 
